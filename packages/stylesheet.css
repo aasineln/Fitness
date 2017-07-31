@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-clipboard {
+    width: 20px;
+    height: 23px;
+    background-position: -5px -5px;
+}
+
+.sprite-cup {
+    width: 16px;
+    height: 22px;
+    background-position: -35px -5px;
+}
+
+.sprite-group {
+    width: 19px;
+    height: 23px;
+    background-position: -61px -5px;
+}
+
+.sprite-likeplus {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -38px;
+}
