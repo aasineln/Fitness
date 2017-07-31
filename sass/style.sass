@@ -1,0 +1,731 @@
+@import 'variables'
+@import 'fonts'
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    min-width: 100%
+    padding: 0
+    margin: 0
+
+//.header,
+//main,
+//.footer,
+//.container,
+//.logo,
+//nav
+//    border: thin solid green
+        
+.container
+    max-width: 1170px
+    width: 100%
+    margin: 0 auto
+    height: inherit
+    display: flex
+
+.header
+    height: 100px
+    width: 100%
+    background-color: $background_main
+    .container 
+        align-items: center
+        justify-content: space-between  
+        .logo 
+            height: 50px
+            width: 150px
+            color: $textcolor1
+            line-height: 50px
+            text-align: center
+            font-family: "raleway-extrabold"
+            font-size: 24px
+            font-weight: 700
+            text-decoration: none
+        nav
+            display: flex
+            justify-content: space-between
+            text-transform: uppercase
+            a.home
+                width: 60px
+                height: 35px
+                background-color: $background_second
+                transition: .1s
+                &:hover
+                    color: white
+                    background-color: green
+            a
+                text-decoration: none
+                width: 80px
+                text-align: center
+                font-family: "oswald-regular"
+                color: $textcolor1
+                font-size: 14px
+                font-weight: 400
+                line-height: 32px
+                &:hover
+                    color: $background_second
+
+.telephone
+    display: flex
+    width: 177px
+    height: 37px
+    text-align: center
+    height: 100%
+    a
+        width: 37px
+        height: 37px
+        background-color: #bd4141
+        text-decoration: none
+    .fa.fa-phone
+        color: $textcolor1
+        line-height: 37px
+        font-size: 16px
+        &:hover
+            background-color: $hover_background
+    .tel
+        width: 140px
+        height: 37px
+        background-color: $background_second
+        font-family: $font_oswald_regular
+        color: $textcolor1
+        font-size: 14px
+        font-weight: 400
+        line-height: 37px
+        &:hover
+            background-color: $hover_background
+
+.header_pic_h
+    justify-content: space-between        
+        
+.header_pic
+    height: 581px
+    background: url("../img/slide1.png") center no-repeat
+    background-size: cover
+    .header_pic_text
+        height: 148px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        text-align: center
+        text-transform: uppercase
+        & div:nth-child(1)
+            width: 148px
+            height: 33px
+            background-color: $background_second
+            font-family: $font_oswald_regular
+            color: $textcolor1
+            font-size: 12px
+            font-weight: 400
+            line-height: 33px
+        & div:nth-child(2)
+            width: 370px
+            height: 66px
+            background-color: $background_main
+            color: $textcolor1
+            font-family: $font_oswald_bold
+            font-size: 29px
+            font-weight: 700
+            line-height: 66px
+        & div:nth-child(3)
+            width: 261px
+            height: 45px
+            background-color: $background_main
+            color: $textcolor1
+            font-family: $font_oswald_regular
+            font-size: 20px
+            font-weight: 400
+            line-height: 45px
+        
+.header_pic_h
+    align-items: center
+    
+main
+    flex: 1 1 100%
+    
+.welcome 
+    display: flex
+    flex-direction: column
+    text-align: center
+    background-color: $textcolor1
+    min-height: 360px
+    justify-content: center
+    h1
+        font-family: $font_oswald_bold
+        color: $background_main
+        font-size: 30px
+        font-weight: 700
+        line-height: 30px
+        text-transform: uppercase
+        margin-bottom: 0
+        span
+            font-family: $font_oswald_bold
+            color: $background_second
+            font-size: 30px
+            font-weight: 700
+            line-height: 30px
+    p
+        font-family: $font_droid_serif_italic
+        color: #a2a2a2
+        font-size: 16px
+        font-style: italic
+        line-height: 30px
+        margin-top: 6px
+    .welcome_articles
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+        margin-top: 30px
+        flex-wrap: wrap
+        span
+            display: flex
+            margin-bottom: 14px
+        h4
+            text-align: left
+            display: inline-block
+            text-transform: uppercase
+            font-family: $font_oswald_bold
+            color: $background_main
+            font-size: 14px
+            font-weight: 700
+            line-height: 24px
+            margin: 0
+        article
+            text-align: justify
+            width: 265px
+            font-family: $font_opensans_regular
+            color: #777777
+            font-size: 13px
+            font-weight: 400
+            line-height: 21px                
+
+.sprite 
+    background-image: url("../icons/spritesheet.png")
+    background-repeat: no-repeat
+    display: inline-block
+    margin-right: 10px
+
+.sprite-clipboard
+    width: 20px
+    height: 23px
+    background-position: -5px -5px
+
+
+.sprite-cup
+    width: 16px
+    height: 22px
+    background-position: -35px -5px
+
+.sprite-group
+    width: 19px
+    height: 23px
+    background-position: -61px -5px
+
+
+.sprite-likeplus 
+    width: 26px
+    height: 22px
+    background-position: -5px -38px
+            
+.superb_trainers
+    background: url("../img/background_superb_trainers.png")
+    width: 100%
+    min-height: 527px
+    .trainers 
+        flex-direction: column
+        justify-content: space-around
+        header
+            margin-bottom: 50px
+            margin-top: 40px
+        h2
+            text-align: center
+            font-family: $font_oswald_bold
+            color: $textcolor1
+            font-size: 24px
+            font-weight: 700
+            line-height: 21px
+            margin-bottom: 12px
+            text-transform: uppercase
+        hr
+            width: 40px
+            margin: 0 auto
+        .trainers_block
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            justify-content: space-between
+            min-height: 315px
+            width: 100%
+            margin-bottom: 20px
+            .trainer_item
+                width: 270px
+                height: 315px
+                background-color: white
+                overflow: hidden
+                margin-bottom: 30px
+                &:hover .photo
+                    margin-top: -240px
+                .background_slider
+                    transition: 1s
+                    height: 75px
+                    min-width: 230px
+                .trainer 
+                    width: 270px
+                    height: 240px
+                    transition: .5s
+                .photo1 
+                    background: url("../img/trainer1.png")
+                .photo2
+                    background: url("../img/trainer2.png")
+                .photo3
+                    background: url("../img/trainer3.jpg")
+                .photo4
+                    background: url("../img/trainer4.png")
+                    background-size: 270px
+                .trainer_title
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    height: 75px
+                    text-transform: uppercase
+                    margin-left: 20px
+                    .trainer_title_1
+                        font-family: $font_oswald_bold
+                        color: $background_main
+                        font-size: 14px
+                        font-weight: 700
+                        line-height: 18px
+                        transition: .3s
+                    .trainer_title_2
+                        font-family: $font_oswald_regular
+                        color: #afafaf
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 16px
+                .title_extended
+                    text-align: justify
+                    width: 270px
+                    height: 240px
+                    font-family: $font_opensans_regular
+                    color: #777777
+                    font-size: 13px
+                    font-weight: 400
+                    line-height: 21px
+                    margin: 0 auto
+                    padding: 0 20px
+                    box-sizing: border-box
+
+.gallery 
+    width: 100%
+    min-height: 500px
+    background-color: $background_main_2
+    .our_gallery    
+        flex-direction: column
+        header
+            margin-top: 50px
+            margin-bottom: 30px
+            h2
+                text-align: center
+                font-family: $font_oswald_bold
+                color: $background_main
+                font-size: 24px
+                font-weight: 700
+                line-height: 21px
+                margin-bottom: 12px
+                text-transform: uppercase
+
+            hr
+                width: 40px
+                margin: 0 auto
+                color: $background_main
+            h4
+                font-family: $font_opensans_regular
+                color: #777777
+                font-size: 12px
+                font-weight: 400
+                line-height: 21px
+                width: 525px
+                margin: 20px auto
+            text-align: center
+        .gallery_items_block
+            display: flex
+            flex-wrap: wrap
+            flex-direction: row
+            margin-top: 20px
+            margin-bottom: 40px
+            position: relative
+            justify-content: center
+            align-items: center
+            &:hover .gallery_insta
+                visibility: hidden
+                opacity: 0
+            .gallery_item
+                width: 280px
+                height: 180px
+                border: 5px solid $background_main_2
+                transition: .2s
+                position: relative
+                z-index: 2
+                &:hover
+                    transform: scale(1.1)
+                    z-index: 3
+            & a:nth-child(1)
+                background: url("../img/gallery1.png")
+            & a:nth-child(2)
+                background:     url("../img/gallery2.png")
+            & a:nth-child(3)
+                background: url("../img/gallery3.png")
+            & a:nth-child(4)
+                background: url("../img/gallery4.png")
+            & a:nth-child(5)
+                background: url("../img/gallery5.png")
+            & a:nth-child(6)
+                background: url("../img/gallery6.png")
+            & a:nth-child(7)
+                background: url("../img/gallery7.png")
+            & a:nth-child(8)
+                background: url("../img/gallery8.png")
+            .gallery_insta
+                display: block
+                position: absolute
+                background: -webkit-linear-gradient(45deg, #f65a3e 14%,#ea7c3c 43%,#f79743 69%,#f6aa40 87%,#f7ca41 100%)
+                width: 270px
+                height: 200px
+                line-height: 45px
+                font-size: 36px
+                padding-top: 51px
+                box-sizing: border-box
+                text-align: center
+                transition: .3s
+                color: $background_main
+                visibility: visible
+                opacity: 1
+                transition: .5s
+                z-index: 2
+                box-shadow: 17px 17px 11px -1px rgba(0,0,0,0.63)
+                i
+                    font-weight: 900
+                span
+                    font-family: $font_oswald_bold
+                    font-weight: 700
+               
+.sprite_pricing
+    background-image: url("../icons/spritepricing.png")
+    background-repeat: no-repeat
+    display: block
+
+.sprite-pricing_paper_plane
+    width: 29px
+    height: 29px
+    background-position: -5px -5px
+
+.sprite-pricing_pencil
+    width: 29px
+    height: 29px
+    background-position: -44px -5px
+
+.sprite-pricing_portfolio
+    width: 32px
+    height: 29px
+    background-position: -5px -44px
+
+.pricing_and_plains
+    width: 100%
+    min-height: 388px
+    background-color: $background_second
+    .pricing
+        display: flex
+        flex-direction: column
+        header
+            margin: 40px auto 50px
+            h2
+                text-align: center
+                font-family: $font_oswald_bold
+                color: $textcolor1
+                font-size: 24px
+                font-weight: 700
+                line-height: 21px
+                margin-bottom: 8px
+                text-transform: uppercase
+            hr
+                margin: 0 auto
+                border-color: $textcolor1
+                width: 40px
+        .pricing_items_block
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            min-height: 175px
+            width: 100%
+            justify-content: space-between
+            .pricing_item
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                width: 370px
+                height: 175px
+                background-color: #d14343
+                border: 2px solid #d14343
+                box-sizing: border-box
+                transition: .2s
+                text-decoration: none
+                .icon_title_cost
+                    padding: 25px 30px
+                    height: 125px
+                    i
+                        margin: 0 auto
+                hr
+                    border: none
+                    width: 2px
+                    height: 121px
+                    background-color: $background_second
+                    margin: auto 0
+                    transition: .2s
+                &:hover
+                    border: 2px solid $textcolor1
+                &:hover hr
+                    background-color: $textcolor1
+                .pricing_title, .pricing_cost
+                    font-family: $font_oswald_bold
+                    color: #ffffff
+                    font-weight: 700
+                    text-transform: uppercase
+                .pricing_cost
+                    font-size: 36px
+                    line-height: 38px
+                    margin-top: 8px
+                    text-align: center
+                    sup
+                        font-size: 20px
+                .pricing_title
+                    font-size: 18px
+                    line-height: 21px
+                    margin-top: 15px
+                ul
+                    padding: 15px 20px
+                    li
+                        list-style-type: none
+                        font-family: $font_opensans_regular
+                        color: $background_main_2
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 21px
+                    li:before
+                        content: ''
+                        background: url("../icons/li_tick.png") no-repeat
+                        width: 10px
+                        height: 8px
+                        display: inline-block
+                        margin-right: 5px
+    
+.partners 
+    width: 100%
+    min-height: 300px
+    background-color: $background_main_2
+    .container 
+        flex-direction: column
+        header
+            margin: 50px auto 30px
+            h2
+                text-align: center
+                font-family: $font_oswald_bold
+                color: $background_main
+                font-size: 24px
+                font-weight: 700
+                line-height: 21px
+                margin-bottom: 12px
+                text-transform: uppercase
+            hr
+                width: 40px
+                margin: 0 auto
+                height: 1px
+                background-color: $background_main
+        .partners_block
+            width: 100%
+            min-height: 180px
+            display: flex
+            justify-content: space-between
+            .partner_item
+                width: 180px
+                height: 150px
+                transition: .3s
+            & a:nth-child(1)
+                background: url("../img/brand_colored1.png") no-repeat center
+            & a:nth-child(2)
+                background: url("../img/brand_colored2.png") no-repeat center
+            & a:nth-child(3)
+                background: url("../img/brand_colored3.png") no-repeat center
+            & a:nth-child(4)
+                background: url("../img/brand_colored4.png") no-repeat center
+            & a:nth-child(5)
+                background: url("../img/brand_colored5.png") no-repeat center
+            & a:hover
+                transform: scale(1.3)
+            
+.footer
+    min-height: 500px
+    width: 100%
+    background-color: $background_main
+    .foot
+        flex-direction: column
+        header
+            min-height: 102px
+            width: 100%
+            .footer_news
+                font-family: $font_opensans_light
+                color: #ffffff
+                font-size: 13px
+                font-weight: 300
+                line-height: 22px
+                display: inline-block
+                width: 576px
+                height: 44px
+                margin: 40px 0
+                text-decoration: none
+                &:hover
+                    color: $background_second
+                &:before
+                    content: '\f099'
+                    width: 24px
+                    height: 24px
+                    font-family: "FontAwesome"
+                    color: white
+                    line-height: 35px
+                    font-size: 24px
+                    float: left
+                    margin-top: 3px
+                    margin-right: 16px
+                span
+                    font-family: $font_opensans_light
+                    color: #717171
+                    font-size: 13px
+                    font-weight: 300
+                    line-height: 22px
+            .nav_container
+                float: right
+                margin-top: 44px
+                nav
+                    display: flex
+                    justify-content: space-between
+                    text-transform: uppercase
+                    min-width: 200px
+                    a
+                        text-decoration: none
+                        text-align: center
+                        color: $textcolor1
+                        font-size: 18px
+                        font-weight: 400
+                        line-height: 32px
+                        &:hover
+                            color: $background_second
+            hr
+                background-color: #323232
+                width: 1170px
+                height: 2px
+                border: none
+        .clr
+            clear: both
+            width: 100%
+            height: 1px
+    .footer_main
+        display: flex
+        min-height: 310px
+        width: 100%
+        h3
+            font-family: $font_oswald_bold
+            color: $background_main_2
+            font-size: 16px
+            font-weight: 700
+            line-height: 21px
+            text-transform: uppercase
+        .contact_info
+            flex-basis: 40%
+            article
+                font-family: $font_opensans_light
+                color: #c6c6c6
+                font-size: 14px
+                font-weight: 300
+                line-height: 21px
+                width: 350px
+                height: 120px
+                text-align: justify
+                .foot_tel    
+                    text-decoration: none
+                    color: #c6c6c6
+                    &:hover
+                        color: $background_second
+                    &:before
+                        content: '\f10b'
+                        font-size: 18px
+                        font-family: "FontAwesome"
+                        margin-right: 5px
+                .foot_mail
+                    text-decoration: none
+                    color: #c6c6c6
+                    &:hover
+                        color: $background_second
+                    &:before
+                        content: '\f003'
+                        font-size: 12px
+                        font-family: "FontAwesome"
+                        margin-right: 5px
+        .send_message
+            flex-basis: 58%
+            form
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                input, textarea
+                    margin-bottom: 16px
+                    background-color: $background_main
+                    border: thin solid #323232
+                    font-family: $font_oswald_regular
+                    color: #656565
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 21px
+                    text-transform: uppercase
+                    padding: 10px
+                    box-sizing: border-box
+                    outline: none
+                    &:focus::-webkit-input-placeholder
+                        color: transparent
+                .name, .email, .subject
+                    width: 212px
+                    height: 36px
+                .message 
+                    width: 443px
+                    height: 111px
+                    resize: none
+                button
+                    width: 212px
+                    height: 36px
+                    background-color: $background_second
+                    border: none
+                    font-family: $font_oswald_regular
+                    color: $background_main_2
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 21px
+                    text-transform: uppercase
+                    outline: none
+                    &:hover
+                        background-color: green
+                    
+    .footer_bottom
+        display: flex
+        justify-content: space-between
+        width: 100%
+        height: 60px
+        span
+            font-family: $font_opensans_light
+            color: #707070
+            font-size: 12px
+            font-weight: 300
+            line-height: 21px
+        a
+            font-family: $font_opensans_light
+            color: #e25050
+            font-size: 16px
+            font-weight: 300
+            line-height: 21px
+            text-decoration: underline
